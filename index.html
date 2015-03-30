@@ -85,20 +85,18 @@
         }
 
         function __setLanguage(val) {
-            window.localStorage.setItem('lang', val);
+            return window.localStorage.setItem('lang', val);
         }
 
         function initLangSelectForm() {
             var $langSelect = $('#set-lang');
             var $langSelectForm = $('.lang-selector');
-            var lang = __getLanguage();
-            if (lang) {
-                $langSelect
-                    .val(lang)
-                    .attr('data-lang', lang);
-                $langSelectForm
-                    .addClass(lang);
-            }
+            var lang = __getLanguage() || 'en';
+            $langSelect
+                .val(lang)
+                .attr('data-lang', lang);
+            $langSelectForm
+                .addClass(lang);
             $langSelect.on('change', function () {
                 __setLanguage(this.value);
                 $langSelectForm.submit();
