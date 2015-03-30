@@ -1,5 +1,5 @@
 .site-logo img {
-    width: 13.25rem;
+    height: 5.75rem;
 }
 
 .lang-selector{
@@ -22,13 +22,32 @@
 .lang-selector.ru .css-select:before { background-image: url("../img/flags/Russia.png"); }
 .lang-selector.ko .css-select:before { background-image: url("../img/flags/Korea,-South.png"); }
 .lang-selector.en .css-select:before { background-image: url("../img/flags/United-States-of-America.png"); }
+
+.hero {
+    height: 24rem;
+    width: 100%;
+    background: transparent url("../img/banner.jpg") no-repeat 90% 50%;
+    background-size: 100% auto;
+    position: relative;
+}
+.hero .overlay {
+    bottom: 0; 
+    position: absolute;
+    height: 75px;
+    line-height: 75px;
+    font-size: 2em;
+    text-align: center;
+    background-color: rgba(255,255,255,0.7);
+    width: 100%;
+}
+
 .css-select {
     padding: 0;
     padding-left: 30px;
     margin: 0;
     border: 1px solid #ccc;
-    width: 140px;
-    border-radius: 3px;
+    box-shadow: 1px 1px 7px rgba(0,0,0,0.2);
+    width: 100%;
     overflow: hidden;
     background-color: #fff;
     background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 90% 50%;
