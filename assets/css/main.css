@@ -1,0 +1,56 @@
+.site-logo img {
+    width: 13.25rem;
+}
+
+.lang-selector{
+    margin-top: 1.7rem;
+}
+
+.lang-selector .css-select:before {
+    width:20px;
+    height:15px;
+    content: " ";
+    display:inline-block;
+    margin-left:-20px;
+    position: absolute;
+    margin-top:10px;
+    background-size:20px 15px;
+}
+
+.lang-selector.jp .css-select:before { background-image: url("../img/flags/Japan.png"); }
+.lang-selector.cn .css-select:before { background-image: url("../img/flags/China.png"); }
+.lang-selector.ru .css-select:before { background-image: url("../img/flags/Russia.png"); }
+.lang-selector.ko .css-select:before { background-image: url("../img/flags/Korea,-South.png"); }
+.lang-selector.en .css-select:before { background-image: url("../img/flags/United-States-of-America.png"); }
+.css-select {
+    padding: 0;
+    padding-left: 30px;
+    margin: 0;
+    border: 1px solid #ccc;
+    width: 140px;
+    border-radius: 3px;
+    overflow: hidden;
+    background-color: #fff;
+    background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 90% 50%;
+}
+
+.css-select select{
+    padding: 5px 8px;
+    width: 130%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.css-select select:focus {
+    outline: none;
+}
+
+.css-select  select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
+}

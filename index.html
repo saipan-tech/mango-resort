@@ -21,18 +21,95 @@
     <link rel="shortcut icon" href="http://www.mangoresort.com/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="http://www.mangoresort.com/images/favicon.ico" type="image/x-icon">
     <title>Mango Resort Saipan</title>
+    <link type="text/css" rel="stylesheet" media="all" href="assets/css/foundation.css"/>
+    <link type="text/css" rel="stylesheet" media="all" href="assets/css/normalize.css"/>
+    <link type="text/css" rel="stylesheet" media="all" href="assets/css/main.css"/>
+    <script src="assets/js/vendor/modernizr.js"></script>
 </head>
 <body>
+
     <div class="site-wrapper">
+
+        <!-- Site Header Begins -->
         <header class="site-header" role="banner">
-            <nav class="site-nav"></nav>
+            <div class="row">
+                <nav class="site-nav">
+                    <span class="site-logo medium-4 columns">
+                        <img src="http://themangoresort.com:8200/static/mango/images/logo.jpg" alt="">
+                    </span>
+                    <form class="lang-selector medium-2 columns" method="post">
+                        <input type="hidden" name="csrfmiddlewaretoken" value="1234" />
+                        <div class="css-select">
+                            <select id="set-lang" data-lang="en" name="set_language">
+                                <option value="en">English</option>
+                                <option value="cn">Chinese</option>
+                                <option value="jp">Japanese</option>
+                                <option value="ko">Korean</option>
+                                <option value="ru">Russian</option>
+                            </select>
+                        </div>
+                    </form>
+                </nav>
+            </div>
         </header>
+        <!-- @Site Header Ends -->
+
+        <!-- Site Body Begins -->
         <div class="site-body" role="main">
             <div class="container"></div>
         </div>
+        <!-- @Site Body Ends -->
+
+        <!-- Site Footer Begins -->
         <footer class="site-footer" role="footer">
             <div class="container"></div>
         </footer>
+        <!-- @Site Footer Ends -->
+
     </div>
+
+    <!-- Vendor Scripts Begin -->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <!-- @Vendor Scripts End -->
+
+    <!-- Scripts Begin -->
+    <script>
+
+        function __getLanguage() {
+            var savedLang = window.localStorage.getItem('lang');
+            if (savedLang) {
+                return savedLang;
+            } else {
+                return null;
+            }
+        }
+
+        function __setLanguage(val) {
+            window.localStorage.setItem('lang', val);
+        }
+
+        function initLangSelectForm() {
+            var $langSelect = $('#set-lang');
+            var $langSelectForm = $('.lang-selector');
+            var lang = __getLanguage();
+            if (lang) {
+                $langSelect
+                    .val(lang)
+                    .attr('data-lang', lang);
+                $langSelectForm
+                    .addClass(lang);
+            }
+            $langSelect.on('change', function () {
+                __setLanguage(this.value);
+                $langSelectForm.submit();
+            });
+        }
+
+        $('document').ready(function () {
+            initLangSelectForm();
+        });
+    </script>
+    <!-- @Scripts End -->
+
 </body>
 </html>
