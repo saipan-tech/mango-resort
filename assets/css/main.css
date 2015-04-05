@@ -1,3 +1,9 @@
+body {
+font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+button:hover, button:focus, .button:hover, .button:focus {
+    background-color: #FDB203;
+}
 .site-logo img {
     height: 5.75rem;
 }
@@ -66,24 +72,63 @@
 
 .hero .overlay {
     top: 50%;
-    margin-top: -6rem;
+    margin-top: -11.2rem;
     position: absolute;
     height: 75px;
     text-align: center;
     width: 100%;
 }
 
-.hero .overlay h2,
-.hero .overlay h3 {
-    color: #fff;
-    text-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+/* small screens */
+@media only screen and (max-width: 40em) {
+    .hero .overlay {
+        margin-top: -9.2rem;
+    }
 }
 
+.hero .overlay a {
+    font-family: "Helvetica Neue",Helvetica,Roboto,Arial,sans-serif;
+    margin-top: 4rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+h1, h2, h3 {
+    font-family: 'Julius Sans One', sans-serif;
+}
+
+.hero .overlay h2 {
+    font-size: 3.5rem;
+    font-weight: 400;
+}
+/* small screens */
+@media only screen and (max-width: 40em) {
+    .hero .overlay h2 {
+        font-size: 2.5rem;
+        font-weight: 400;
+    }
+}
+.hero .overlay .sub-head {
+    font-family: "Helvetica Neue";
+    font-size: 1.1em;
+    margin-top: -1rem;
+    display:block;
+}
+
+.hero .overlay h2,
+.hero .overlay .sub-head {
+    color: #fff;
+    text-shadow: 3px 3px 2px rgba(0,0,0,0.6);
+}
+
+.mgo-button {
+
+}
 .mgo-button-banner {
     background-color: rgba(255, 255, 255, 1);
     box-shadow: 0px 2px 0px rgba(0,0,0,0.1);
     font-size: 1em;
-    padding: 1rem 1.5rem;
+    padding:0.7rem 1.7rem;
     color: #000;
 }
 
@@ -93,6 +138,7 @@
     margin: 0;
     overflow: hidden;
     box-shadow: 0px 2px 0px rgba(0,0,0,0.1);
+    border-radius: 1000px;
     background-color: #fff;
     background: #fff url("../img/arrowdown.gif") no-repeat 90% 50%;
 }
@@ -147,16 +193,9 @@
 .featurette-3 .overlay {background-color: rgba(179, 222, 29, 1); border-bottom: 2px solid #68a337 }
 .featurette-4 .overlay {background-color: rgba(253, 178, 3, 1); border-bottom: 2px solid #e18122 }
 
-.room .content {
-}
-
-.room {
-    margin-bottom:2rem;
-}
 
 /* entire container, keeps perspective */
 .flip-container {
-    border: 1px solid #ddd;
     perspective: 1000px;
 }
 
@@ -166,7 +205,7 @@
 }
 
 .flip-container, .front, .back {
-    height:15rem;
+    height:17rem;
 }
 
 /* flip speed goes here */
@@ -195,6 +234,34 @@
 /* back, initially hidden pane */
 .back {
     transform: rotateY(180deg);
+}
+
+.room .content {
+}
+
+.room .panel {
+    height: 17rem;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.room {
+    margin-bottom:2rem;
+}
+
+.room .front {
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.room-1 .front { background-image: url("http://themangoresort.com:8200/static/mango/images/room.png"); }
+.room-2 .front { background-image: url("http://themangoresort.com:8200/static/mango/images/deluxe.png"); }
+.room-3 .front { background-image: url("http://themangoresort.com:8200/static/mango/images/pooldeluxe.png"); }
+.room-4 .front { background-image: url("http://themangoresort.com:8200/static/mango/images/lanai.png"); }
+.room-5 .front { background-image: url("http://themangoresort.com:8200/static/mango/images/president1.png"); }
+
+.room .front img {
+    display: none;
 }
 
 .wireframe {
