@@ -2,10 +2,28 @@
     height: 5.75rem;
 }
 
+/* small screens */
+@media only screen and (max-width: 40em) {
+    .site-logo {
+        text-align: center;
+    }
+}
+
 .lang-selector{
     margin-top: 1.7rem;
 }
+/* small screens */
+@media only screen and (max-width: 40em) {
+    .lang-selector {
+        margin-bottom: 1.7rem;
+    }
+}
 
+.lang-selector .css-select {
+    background-color: #FCE6A3;
+    border:none;
+    box-shadow: none;
+}
 .lang-selector .css-select:before {
     width:20px;
     height:15px;
@@ -26,10 +44,20 @@
 .hero {
     height: 24rem;
     width: 100%;
-    background: transparent url("../img/banner.jpg") no-repeat 90% 50%;
+    background: transparent url("../img/banner.jpg") no-repeat;
+    background-position: 90% 50%;
     background-size: 100% auto;
     position: relative;
 }
+
+/* small screens */
+@media only screen and (max-width: 40em) {
+    .hero {
+        background-size: auto 24rem;
+        background-position: 0 0;
+    }
+}
+
 .hero .overlay {
     bottom: 0; 
     position: absolute;
