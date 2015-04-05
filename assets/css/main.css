@@ -20,7 +20,8 @@
 }
 
 .lang-selector .css-select {
-    background-color: #FCE6A3;
+    /* background-color: #FCE6A3; */
+    background-color: #67B212;
     border:none;
     box-shadow: none;
 }
@@ -53,8 +54,9 @@
 /* small screens */
 @media only screen and (max-width: 40em) {
     .hero {
+        height: 20rem;
         background-size: auto 24rem;
-        background-position: 0 0;
+        background-position: 0 -2rem;
     }
 }
 
@@ -78,7 +80,8 @@
     width: 100%;
     overflow: hidden;
     background-color: #fff;
-    background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 90% 50%;
+    color: #fff;
+    background: #fff url("../img/arrowdown-w.png") no-repeat 90% 50%;
 }
 
 .css-select select{
@@ -101,3 +104,33 @@
     color: transparent;
     text-shadow: 0 0 0 #000;
 }
+
+.site-body .container {
+    margin-top: 2rem;
+}
+.featurette {
+    margin-bottom: 2rem;
+}
+.featurette .content{
+    width: 100%
+}
+
+.featurette .overlay {
+    color: #fff;
+    padding: 1.5rem 1rem;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    text-align: center;
+}
+
+/*
+.featurette-1 { background-image: url("http://themangoresort.com:8200/static/mango/images/bed_little.png");}
+.featurette-2 { background-image: url("http://themangoresort.com:8200/static/mango/images/bed_little.png");}
+.featurette-3 { background-image: url("http://themangoresort.com:8200/static/mango/images/bed_little.png");}
+.featurette-4 { background-image: url("http://themangoresort.com:8200/static/mango/images/bed_little.png");}
+*/
+.featurette-1 .overlay {background-color: rgba(51, 104, 10, 1); border-bottom: 2px solid #26470d }
+.featurette-2 .overlay {background-color: rgba(126, 198, 67, 1);border-bottom: 2px solid #619934 }
+.featurette-3 .overlay {background-color: rgba(179, 222, 29, 1); border-bottom: 2px solid #68a337 }
+.featurette-4 .overlay {background-color: rgba(253, 178, 3, 1); border-bottom: 2px solid #e18122 }
+

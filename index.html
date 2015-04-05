@@ -18,6 +18,7 @@
     <meta name="ICBM" content="15.131368, 145.710522" />
     <meta name="DC.date" content="2014-05-05">
     <meta name="DCTERMS.audience" content="people looking for hotel on Saipan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <link rel="shortcut icon" href="http://www.mangoresort.com/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="http://www.mangoresort.com/images/favicon.ico" type="image/x-icon">
     <title>Mango Resort Saipan</title>
@@ -63,7 +64,49 @@
                     Saipan's Newest Resort
                 </div>
             </div>
-            <div class="container"></div>
+            <div class="container">
+                <!-- Features Begin -->
+                <div class="features row" data-equalizer>
+                    <div class="featurette small-6 medium-3 columns">
+                        <div class="featurette-1 content">
+                            <div class="overlay" data-equalizer-watch>
+                                <span>
+                                    Minutes to the Beach via Shuttle
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featurette small-6 medium-3 columns">
+                        <div class="featurette-2 content">
+                            <div class="overlay" data-equalizer-watch>
+                                <span>
+                                    Indoor Health and Recreation area
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featurette small-6 medium-3 columns">
+                        <div class="featurette-3 content">
+                            <div class="overlay" data-equalizer-watch>
+                                <span>
+                                    Conference and Banquet Rooms
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="featurette small-6 medium-3 columns">
+                        <div class="featurette-4 content">
+                            <div class="overlay" data-equalizer-watch>
+                                <span>
+                                    Healthy Salt Water Swimming Pools
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- @Features End -->
+
+            </div>
         </div>
         <!-- @Site Body Ends -->
 
@@ -77,10 +120,14 @@
 
     <!-- Vendor Scripts Begin -->
     <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/foundation/foundation.js"></script>
+    <script src="assets/js/foundation/foundation.equalizer.js"></script>
     <!-- @Vendor Scripts End -->
 
     <!-- Scripts Begin -->
     <script>
+
+        $(document).foundation();
 
         function __getLanguage() {
             var savedLang = window.localStorage.getItem('lang');
