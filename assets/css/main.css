@@ -20,7 +20,8 @@
 }
 
 .lang-selector .css-select {
-    background-color: #FCE6A3;
+    /* background-color: #FCE6A3; */
+    background-color: #67B212;
     border:none;
     box-shadow: none;
 }
@@ -78,7 +79,8 @@
     width: 100%;
     overflow: hidden;
     background-color: #fff;
-    background: #fff url("http://www.scottgood.com/jsg/blog.nsf/images/arrowdown.gif") no-repeat 90% 50%;
+    color: #fff;
+    background: #fff url("../img/arrowdown-w.png") no-repeat 90% 50%;
 }
 
 .css-select select{
