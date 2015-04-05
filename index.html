@@ -22,7 +22,7 @@
     <link rel="shortcut icon" href="http://www.mangoresort.com/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="http://www.mangoresort.com/images/favicon.ico" type="image/x-icon">
     <title>Mango Resort Saipan</title>
-    <link type="text/css" rel="stylesheet" media="all" href="assets/css/foundation.css"/>
+    <link type="text/css" rel="stylesheet" media="all" href="assets/css/foundation.min.css"/>
     <link type="text/css" rel="stylesheet" media="all" href="assets/css/normalize.css"/>
     <link type="text/css" rel="stylesheet" media="all" href="assets/css/main.css"/>
     <script src="assets/js/vendor/modernizr.js"></script>
@@ -37,10 +37,10 @@
                 <nav class="site-nav">
                     <div class="site-logo medium-5 columns">
                         <div>
-                            <img src="http://themangoresort.com:8200/static/mango/images/logo.jpg" alt="">
+                            <img src="assets/img/logo.jpg" alt="">
                         </div>
                     </div>
-                    <form class="lang-selector medium-3 columns" method="post">
+                    <form class="lang-selector" method="post">
                         <input type="hidden" name="csrfmiddlewaretoken" value="1234" />
                         <div class="css-select">
                             <select id="set-lang" data-lang="en" name="set_language">
@@ -61,7 +61,10 @@
         <div class="site-body" role="main">
             <div class="hero">
                 <div class="overlay">
-                    Saipan's Newest Resort
+                    <h2>Saipan's Newest Resort</h2>
+                    <h3>Prices start at $79</h3>
+                    <br>
+                    <a class="button mgo-button-banner">Book Now</a>
                 </div>
             </div>
             <div class="container">
@@ -105,6 +108,61 @@
                     </div>
                 </div>
                 <!-- @Features End -->
+
+                <!-- Rooms Begin -->
+                <section class="row">
+                    <div class="heading columns small-12">
+                        <h2>Rooms</h2>
+                    </div>
+                    <div class="rooms">
+                        <div class="room room-1 columns small-12 medium-6 large-4">
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front content wireframe">
+                                        <img src="http://themangoresort.com:8200/static/mango/images/room.png"/>
+                                    </div>
+                                    <div class="back content wireframe">
+                                        <p>
+                                            All of are Standard Rooms (27 total) are located on
+                                            1st - 2nd and 3rd floors of the Resort's Noth Wing.
+                                            These rooms are offered at a budget price, but are
+                                            not of a budget quality. Check for availability, they go fast.
+                                        </p>
+                                        <button>Book Room</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="room room-1 columns small-12 medium-6 large-4">
+                            <div class="flip-container">
+                                <div class="flipper">
+                                    <div class="front content wireframe">
+                                        <img src="http://themangoresort.com:8200/static/mango/images/room.png"/>
+                                    </div>
+                                    <div class="back content wireframe">
+                                        <p>
+                                            All of are Standard Rooms (27 total) are located on
+                                            1st - 2nd and 3rd floors of the Resort's Noth Wing.
+                                            These rooms are offered at a budget price, but are
+                                            not of a budget quality. Check for availability, they go fast.
+                                        </p>
+                                        <button>Book Room</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="room columns small-12 medium-6 large-4">
+                            <div class="content wireframe"></div>
+                        </div>
+                        <div class="room columns small-12 medium-6 large-4">
+                            <div class="content wireframe"></div>
+                        </div>
+                        <div class="room columns small-12 medium-6 large-4">
+                            <div class="content wireframe"></div>
+                        </div>
+                    </div>
+                </section>
+                <!-- @Rooms End -->
 
             </div>
         </div>

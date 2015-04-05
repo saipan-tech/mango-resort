@@ -11,19 +11,22 @@
 
 .lang-selector{
     margin-top: 1.7rem;
+    width: 9.2rem;
+    float: right;
+    margin-right: 1rem;
 }
+
 /* small screens */
 @media only screen and (max-width: 40em) {
     .lang-selector {
-        margin-bottom: 1.7rem;
+        margin: 0 auto 1.7rem;
+        float: none;
     }
 }
 
 .lang-selector .css-select {
     /* background-color: #FCE6A3; */
-    background-color: #67B212;
-    border:none;
-    box-shadow: none;
+    /* background-color: #67B212; */
 }
 .lang-selector .css-select:before {
     width:20px;
@@ -45,6 +48,7 @@
 .hero {
     height: 24rem;
     width: 100%;
+    color: #fff;
     background: transparent url("../img/banner.jpg") no-repeat;
     background-position: 90% 50%;
     background-size: 100% auto;
@@ -61,27 +65,36 @@
 }
 
 .hero .overlay {
-    bottom: 0; 
+    top: 50%;
+    margin-top: -6rem;
     position: absolute;
     height: 75px;
-    line-height: 75px;
-    font-size: 2em;
     text-align: center;
-    background-color: rgba(255,255,255,0.7);
     width: 100%;
+}
+
+.hero .overlay h2,
+.hero .overlay h3 {
+    color: #fff;
+    text-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+}
+
+.mgo-button-banner {
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0px 2px 0px rgba(0,0,0,0.1);
+    font-size: 1em;
+    padding: 1rem 1.5rem;
+    color: #000;
 }
 
 .css-select {
     padding: 0;
     padding-left: 30px;
     margin: 0;
-    border: 1px solid #ccc;
-    box-shadow: 1px 1px 7px rgba(0,0,0,0.2);
-    width: 100%;
     overflow: hidden;
+    box-shadow: 0px 2px 0px rgba(0,0,0,0.1);
     background-color: #fff;
-    color: #fff;
-    background: #fff url("../img/arrowdown-w.png") no-repeat 90% 50%;
+    background: #fff url("../img/arrowdown.gif") no-repeat 90% 50%;
 }
 
 .css-select select{
@@ -134,3 +147,57 @@
 .featurette-3 .overlay {background-color: rgba(179, 222, 29, 1); border-bottom: 2px solid #68a337 }
 .featurette-4 .overlay {background-color: rgba(253, 178, 3, 1); border-bottom: 2px solid #e18122 }
 
+.room .content {
+}
+
+.room {
+    margin-bottom:2rem;
+}
+
+/* entire container, keeps perspective */
+.flip-container {
+    border: 1px solid #ddd;
+    perspective: 1000px;
+}
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container, .front, .back {
+    height:15rem;
+}
+
+/* flip speed goes here */
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    width: 100%;
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+    transform: rotateY(180deg);
+}
+
+.wireframe {
+    background-color:#eee;
+    border: 1px solid #ccc;
+}
