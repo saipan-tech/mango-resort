@@ -211,6 +211,10 @@ h1, h2, h3 {
     height:17rem;
 }
 
+.no-flip-container  {
+    height:17rem;
+}
+
 /* flip speed goes here */
 .flipper {
     transition: 0.6s;
@@ -262,6 +266,15 @@ h1, h2, h3 {
 .room-3 .front { background-image: url("../img/rooms/pooldeluxe.jpg"); }
 .room-4 .front { background-image: url("../img/rooms/lanai.jpg"); }
 .room-5 .front { background-image: url("../img/rooms/president1.jpg"); }
+
+
+.room-6 .front { background-image: url("../img/suites/outside.jpg"); }
+.room-7 .front { background-image: url("../img/suites/inside3.jpg"); }
+
+.room-8 .front { background-image: url("../img/facility/poolside.jpg"); }
+.room-9 .front { background-image: url("../img/facility/french.jpg"); }
+.room-10 .front { background-image: url("../img/facility/health_club.png"); }
+
 
 .room .front img {
     display: none;
