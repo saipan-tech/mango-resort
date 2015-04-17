@@ -30,6 +30,34 @@
 </head>
 
 <body>
+<style>
+ /*
+    div{
+        border:1px solid black;
+    }
+    img {
+        border:1px solid red;
+
+
+    }
+*/
+    .lang-bar {
+        margin-top:1rem;
+    }
+    .lang-bar img {
+        border:1px solid #ddd;
+        width:35px !important;
+        margin-left:10px;
+
+    }
+    .lang-bar img:hover {
+        border: 1px solid black;
+
+    }
+
+
+</style>
+
 
     <div class="site-wrapper">
 
@@ -44,18 +72,25 @@
                             </a>
                         </div>
                     </div>
-                    <form class="lang-selector" method="post">
-                        <input type="hidden" name="csrfmiddlewaretoken" value="1234" />
-                        <div class="css-select">
-                            <select id="set-lang" data-lang="en" name="set_language">
-                                <option value="en">English</option>
-                                <option value="cn">Chinese</option>
-                                <option value="jp">Japanese</option>
-                                <option value="ko">Korean</option>
-                                <option value="ru">Russian</option>
-                            </select>
-                        </div>
-                    </form>
+                    <div class="lang-bar medium-6 columns">
+                        <img src="assets/img/flags/USA.png" alt="USA">
+                        <img src="assets/img/flags/China.png" alt="China">
+                        <img src="assets/img/flags/South Korea.png" alt="South Korea">
+                        <img src="assets/img/flags/Russia.png" alt="Russia">
+                        <img src="assets/img/flags/Japan.png" alt="Japan">
+                        <form class="lang-selector" method="post">
+                            <input type="hidden" name="csrfmiddlewaretoken" value="1234" />
+                            <div class="css-select">
+                                <select id="set-lang" data-lang="en" name="set_language">
+                                    <option value="en">English</option>
+                                    <option value="cn">Chinese</option>
+                                    <option value="ko">Korean</option>
+                                    <option value="ru">Russian</option>
+                                    <option value="jp">Japanese</option>
+                                </select>
+                            </div>
+                        </form>
+                    </div>
                 </nav>
             </div>
         </header>
@@ -65,27 +100,13 @@
         
         <div style="
             position:fixed;
-            top:100px;
-            left:100px;
-            border:1px solid black;
+            top:10px;
+            right:35px;
             border-radius:20px;
-            width:180px;
-            height:350px;
+            width:120px;
+            height:90px;
             z-index:100;
-            background-color:NavajoWhite;
-/*            box-shadow: 10px 10px 5px #ccc; */
-            opacity:0.4;
-            " >
-            
-            <table style="width:100%;font-size:9pt;">
-                <tr>
-                    <td>Reservation Inquiry</td>
-                </tr>
-                
-            </table>
-                
-               
-            
+            " ><a class="button round mgo-button-banner" href="http://themangoresort.com/django/webview?type=standard">Book Now</a>
         </div>
         
         
@@ -95,7 +116,6 @@
             <div class="hero">
                 <div class="overlay">
                     <h2>Saipan's Newest Resort</h2>
-                    <a class="button round mgo-button-banner" href="http://themangoresort.com/django/webview?type=standard">Book Now</a>
                     <span class="sub-head"></span>
                 </div>
             </div>

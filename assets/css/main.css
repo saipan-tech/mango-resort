@@ -16,7 +16,7 @@ button:hover, button:focus, .button:hover, .button:focus {
 }
 
 .lang-selector{
-    margin-top: 1.7rem;
+ /*   margin-top: 1.7rem; */
     width: 9.2rem;
     float: right;
     margin-right: 1rem;
