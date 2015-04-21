@@ -1,5 +1,5 @@
 body {
-font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 button:hover, button:focus, .button:hover, .button:focus {
     background-color: #FDB203;
@@ -49,8 +49,8 @@ button:hover, button:focus, .button:hover, .button:focus {
 .lang-selector.jp .css-select:before { background-image: url("../img/flags/Japan.png"); }
 .lang-selector.cn .css-select:before { background-image: url("../img/flags/China.png"); }
 .lang-selector.ru .css-select:before { background-image: url("../img/flags/Russia.png"); }
-.lang-selector.ko .css-select:before { background-image: url("../img/flags/Korea,-South.png"); }
-.lang-selector.en .css-select:before { background-image: url("../img/flags/United-States-of-America.png"); }
+.lang-selector.ko .css-select:before { background-image: url("../img/flags/South%20Korea.png"); }
+.lang-selector.en .css-select:before { background-image: url("../img/flags/USA.png"); }
 
 .hero {
     height: 24rem;
