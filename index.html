@@ -54,16 +54,6 @@
         border: 1px solid black;
 
     }
-    .keyponts {
-
-
-    }
-    .key1 {
-
-    }
-    .keyitems li { 
-
-    }
 
     .anchor {
         text-decoration: none;
@@ -119,21 +109,23 @@
         </header>
         <!-- @Site Header Ends -->
 
-        <!-- Reservation Widget -->
-        
-        <div style="
-            position:fixed;
-            top:10px;
-            right:35px;
-            border-radius:20px;
-            width:120px;
-            height:90px;
-            z-index:100;
-            " ><a class="button round mgo-button-banner" href="http://themangoresort.com/django/webview?type=standard">Book Now</a>
+        <!-- Sticky Header Begins -->
+        <div class="sticky-header hide">
+            <div class="row">
+                <div class="site-logo sticky-site-logo medium-5 columns">
+                    <div>
+                        <a href="/">
+                            <img src="assets/img/logo.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="book-button push-5">
+                    <a class="button round mgo-button-banner" href="http://themangoresort.com/django/webview?type=standard">Book&nbsp;Now</a>
+                </div>
+            </div>
         </div>
-        
-        
-        
+        <!-- @Sticky Header Ends -->
+
         <!-- Site Body Begins -->
         <div class="site-body" role="main">
             <div class="hero">
@@ -509,8 +501,21 @@
             });
         }
 
+        function initStickyHeader() {
+            $header = $('.site-header');
+            $stickyHeader = $('.sticky-header');
+            $(window).bind('scroll', function () {
+                if ($header.innerHeight() < $(window).scrollTop()) {
+                    $stickyHeader.removeClass('hide');
+                } else {
+                    $stickyHeader.addClass('hide');
+                }
+            });
+        }
+
         $('document').ready(function () {
             initLangSelectForm();
+            initStickyHeader();
         });
     </script>
     <!-- @Scripts End -->

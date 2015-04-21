@@ -1,11 +1,30 @@
 body {
     font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
 button:hover, button:focus, .button:hover, .button:focus {
     background-color: #FDB203;
 }
+
 .site-logo img {
     height: 5.75rem;
+}
+
+.sticky-header {
+    position:fixed;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    width: 100%;
+    top: 0;
+}
+
+.sticky-site-logo img {
+    height: 4.55rem;
+}
+
+.sticky-header .book-button {
+    margin-top:1rem;
 }
 
 
