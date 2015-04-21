@@ -1,11 +1,42 @@
 body {
-font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: Roboto,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
+
 button:hover, button:focus, .button:hover, .button:focus {
     background-color: #FDB203;
 }
+
 .site-logo img {
     height: 5.75rem;
+}
+
+.sticky-header {
+    position:fixed;
+    z-index: 1;
+    background-color: #fff;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+    width: 100%;
+    top: 0;
+}
+
+.sticky-site-logo img {
+    height: 4.55rem;
+}
+
+.sticky-header .book-button {
+    margin-top:1rem;
+}
+
+.site-footer .container {
+    border-top: 1px solid #ddd;
+    padding-top: 1.5rem;
+}
+.site-footer .legal {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color:#666;
+    border-top: 1px solid #ddd;
 }
 
 
@@ -49,8 +80,8 @@ button:hover, button:focus, .button:hover, .button:focus {
 .lang-selector.jp .css-select:before { background-image: url("../img/flags/Japan.png"); }
 .lang-selector.cn .css-select:before { background-image: url("../img/flags/China.png"); }
 .lang-selector.ru .css-select:before { background-image: url("../img/flags/Russia.png"); }
-.lang-selector.ko .css-select:before { background-image: url("../img/flags/Korea,-South.png"); }
-.lang-selector.en .css-select:before { background-image: url("../img/flags/United-States-of-America.png"); }
+.lang-selector.ko .css-select:before { background-image: url("../img/flags/South%20Korea.png"); }
+.lang-selector.en .css-select:before { background-image: url("../img/flags/USA.png"); }
 
 .hero {
     height: 24rem;
