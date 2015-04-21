@@ -8,6 +8,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     height: 5.75rem;
 }
 
+
 /* small screens */
 @media only screen and (max-width: 40em) {
     .site-logo {
@@ -93,7 +94,7 @@ button:hover, button:focus, .button:hover, .button:focus {
     font-weight: bold;
 }
 
-h1, h2, h3 {
+h1, h2, h3, h4 {
     font-family: 'Julius Sans One', sans-serif;
 }
 
