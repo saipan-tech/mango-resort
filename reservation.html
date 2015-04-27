@@ -21,13 +21,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <link rel="shortcut icon" href="http://www.mangoresort.com/images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="http://www.mangoresort.com/images/favicon.ico" type="image/x-icon">
-    <title>Mango Resort Saipan - Reviews</title>
+    <title>Mango Resort Saipan - Book Reservation</title>
     <link href='http://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,400,500,700,800,900|Sorts+Mill+Goudy|Julius+Sans+One|Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
     <link type="text/css" rel="stylesheet" media="all" href="assets/css/foundation.min.css"/>
     <link type="text/css" rel="stylesheet" media="all" href="assets/css/normalize.css"/>
     <link type="text/css" rel="stylesheet" media="all" href="assets/css/main.css"/>
     <script src="assets/js/vendor/modernizr.js"></script>
 </head>
+
 <body>
     <div class="site-wrapper">
         <!-- Site Header Begins -->
@@ -83,49 +84,16 @@
         </div>
         <!-- @Sticky Header Ends -->
         <div class="site-body" role="main">
-            <div class="hero3">
+            <div class="hero2">
                 <div class="overlay">
-                    <h2>Review Page</h2>
+                    <h2>Reservation System</h2>
                     <span class="sub-head"></span>
                 </div>
             </div>
         </div>    
-        <div id='container'>
-            <form id="mainForm" method='POST'>
-                <input type='hidden' name='csrfmiddlewaretoken' value='0IqBX4NXJZUUhbubhz5DPrPYbv0RvA1w' />
-
-                <table>
-                    <tr>   
-                        <th><label for="id_name">Name:</label></th>
-                        <td><input id="id_name" maxlength="80" name="name" type="text" /></td>
-                    </tr>
-                    <tr>
-                        <th><label for="id_title">Title:</label></th>
-                        <td><input id="id_title" maxlength="128" name="title" type="text" /></td></tr>
-                    <tr>
-                        <th><label for="id_msg">Msg:</label></th>
-                        <td><textarea cols="40" id="id_msg" name="msg" rows="10"></textarea></td>
-                    </tr>
-                    <tr><th><label for="id_stars">Stars:</label></th>
-                        <td>
-                            <select id="id_stars" name="stars">
-                                <option value="" selected="selected">---------</option>
-                                <option value="5">5 Stars *****</option>
-                                <option value="4">4 Stars ****</option>
-                                <option value="3">3 Stars ***</option>
-                                <option value="2">2 Stars **</option>
-                                <option value="1">1 Stars *</option>
-                            </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td><button name="addreview">Save Review</button></td>
-                    </tr>
-                </table>
-            </form>
-        </div>
     </div>
+
+
 
     <!-- Vendor Scripts Begin -->
     <script src="assets/js/vendor/jquery.js"></script>
@@ -135,9 +103,7 @@
 
     <!-- Scripts Begin -->
     <script>
-
         $(document).foundation();
-
         function __getLanguage() {
             var savedLang = window.localStorage.getItem('lang');
             if (savedLang) {
@@ -184,5 +150,6 @@
         });
     </script>
     <!-- @Scripts End -->
+
 </body>
 </html>
